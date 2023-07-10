@@ -38,6 +38,7 @@ public class PostController {
     public List<Post> getPostsByUser(@PathVariable Long userId) {
         // userId parametresi ile belirli bir kullanıcıya ait yazıları veritabanından alır ve döndürür
     }
+
     @GetMapping
     public List<Post> searchPostsByKeyword(@RequestParam("search") String keyword) {
         // keyword parametresi ile yazıları arar ve döndürür
@@ -47,9 +48,10 @@ public class PostController {
     public List<Post> getPostsByCategory(@RequestParam("category") String category) {
         // category parametresi ile belirli bir kategoriye ait yazıları getirir ve döndürür
     }
+}
     /*
     @RequestParam anotasyonu, HTTP isteği parametrelerini almak için kullanılır.
     search ve category parametreleriyle arama ve kategorilendirme yapmak için kullanıyoruz.
      */
-}
+
 
